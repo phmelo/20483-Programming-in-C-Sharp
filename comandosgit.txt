@@ -1,0 +1,128 @@
+C:\Users\phmel
+? cd S:\Estudo\Microsoft\ProCoding\repo
+
+C:\Users\phmel
+? s:
+
+S:\Estudo\Microsoft\ProCoding\repo
+? git clone https://github.com/phmelo/20483-Programming-in-C-Sharp.git
+Cloning into '20483-Programming-in-C-Sharp'...
+remote: Enumerating objects: 258, done.
+remote: Counting objects: 100% (258/258), done.
+remote: Compressing objects: 100% (150/150), done.
+remote: Total 3716 (delta 123), reused 197 (delta 106), pack-reused 3458
+Receiving objects: 100% (3716/3716), 41.51 MiB | 2.16 MiB/s, done.
+Resolving deltas: 100% (2240/2240), done.
+Checking out files: 100% (4312/4312), done.
+
+S:\Estudo\Microsoft\ProCoding\repo
+? cd 20483-Programming-in-C-Sharp\
+
+S:\Estudo\Microsoft\ProCoding\repo\20483-Programming-in-C-Sharp (master -> origin)
+? git remote add upstream https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp.git
+
+S:\Estudo\Microsoft\ProCoding\repo\20483-Programming-in-C-Sharp (master -> origin)
+? git remote -v
+origin  https://github.com/phmelo/20483-Programming-in-C-Sharp.git (fetch)
+origin  https://github.com/phmelo/20483-Programming-in-C-Sharp.git (push)
+upstream        https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp.git (fetch)
+upstream        https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp.git (push)
+
+S:\Estudo\Microsoft\ProCoding\repo\20483-Programming-in-C-Sharp (master -> origin)
+? git fetch upstream
+remote: Enumerating objects: 217, done.
+remote: Counting objects: 100% (215/215), done.
+remote: Compressing objects: 100% (127/127), done.
+Rremote: Total 163 (delta 65), reused 83 (delta 34), pack-reused 0eceiving objects:  46% (75/163)
+Receiving objects: 100% (163/163), 17.11 KiB | 1.14 MiB/s, done.
+Resolving deltas: 100% (65/65), completed with 22 local objects.
+From https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp
+ * [new branch]      20483C_Demo_01  -> upstream/20483C_Demo_01
+ * [new branch]      20483C_Demo_02  -> upstream/20483C_Demo_02
+ * [new branch]      20483C_Demo_03  -> upstream/20483C_Demo_03
+ * [new branch]      20483C_Demo_04  -> upstream/20483C_Demo_04
+ * [new branch]      20483C_Demo_05  -> upstream/20483C_Demo_05
+ * [new branch]      20483C_Demo_06  -> upstream/20483C_Demo_06
+ * [new branch]      20483C_Demo_08  -> upstream/20483C_Demo_08
+ * [new branch]      20483C_Demo_09  -> upstream/20483C_Demo_09
+ * [new branch]      20483C_Demo_10  -> upstream/20483C_Demo_10
+ * [new branch]      20483C_Demo_11  -> upstream/20483C_Demo_11
+ * [new branch]      20483C_Demo_12  -> upstream/20483C_Demo_12
+ * [new branch]      20483C_Demo_13  -> upstream/20483C_Demo_13
+ * [new branch]      20483C_LAK_06_a -> upstream/20483C_LAK_06_a
+ * [new branch]      20483C_LAK_08   -> upstream/20483C_LAK_08
+ * [new branch]      20483C_LAK_12   -> upstream/20483C_LAK_12
+ * [new branch]      20483C_LAK_13   -> upstream/20483C_LAK_13
+ * [new branch]      20483C_LM_01    -> upstream/20483C_LM_01
+ * [new branch]      20483C_LM_02    -> upstream/20483C_LM_02
+ * [new branch]      20483C_LM_03    -> upstream/20483C_LM_03
+ * [new branch]      20483C_LM_06_a  -> upstream/20483C_LM_06_a
+ * [new branch]      20483C_LM_08a   -> upstream/20483C_LM_08a
+ * [new branch]      20483C_LM_10    -> upstream/20483C_LM_10
+ * [new branch]      20483C_LM_11    -> upstream/20483C_LM_11
+ * [new branch]      20483C_LM_12    -> upstream/20483C_LM_12
+ * [new branch]      20483C_LM_13    -> upstream/20483C_LM_13
+ * [new branch]      20483_Demo_07   -> upstream/20483_Demo_07
+ * [new branch]      Bug/92376       -> upstream/Bug/92376
+ * [new branch]      Roi/Mod1        -> upstream/Roi/Mod1
+ * [new branch]      Roi/Mod10       -> upstream/Roi/Mod10
+ * [new branch]      Roi/Mod12       -> upstream/Roi/Mod12
+ * [new branch]      Roi/Mod13       -> upstream/Roi/Mod13
+ * [new branch]      Roi/Mod4        -> upstream/Roi/Mod4
+ * [new branch]      Roi/Mod6        -> upstream/Roi/Mod6
+ * [new branch]      Roi/Mod9        -> upstream/Roi/Mod9
+ * [new branch]      master          -> upstream/master
+ * [new branch]      shalev/mod8     -> upstream/shalev/mod8
+ * [new branch]      slava/mod12     -> upstream/slava/mod12
+ * [new branch]      slava/mod2      -> upstream/slava/mod2
+ * [new branch]      slava/mod8      -> upstream/slava/mod8
+
+S:\Estudo\Microsoft\ProCoding\repo\20483-Programming-in-C-Sharp (master -> origin)
+? git merge upstream/master
+Updating a72f1e8..9f3e419
+Fast-forward
+ .../Solution/Exercise 1/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Solution/Exercise 2/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Solution/Exercise 3/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Starter/Exercise 1/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Starter/Exercise 2/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Starter/Exercise 3/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Solution/Exercise 1/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Solution/Exercise 2/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Solution/Exercise 3/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Starter/Exercise 1/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Starter/Exercise 2/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Starter/Exercise 3/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Solution/Exercise 1/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Solution/Exercise 2/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Starter/Exercise 1/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Starter/Exercise 2/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Solution/Exercise 1/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Solution/Exercise 2/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Starter/Exercise 1/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Starter/Exercise 2/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Solution/Exercise 1/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Solution/Exercise 2/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Solution/Exercise 3/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Starter/Exercise 1/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Starter/Exercise 2/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Starter/Exercise 3/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ .../Solution/Exercise 1/Grades.Web/Services/GradesWebDataService.svc    | 2 +-
+ .../Starter/Exercise 1/Grades.Web/Services/GradesWebDataService.svc     | 2 +-
+ 28 files changed, 28 insertions(+), 28 deletions(-)
+
+S:\Estudo\Microsoft\ProCoding\repo\20483-Programming-in-C-Sharp (master -> origin)
+? git checkout -b PH
+Switched to a new branch 'PH'
+
+S:\Estudo\Microsoft\ProCoding\repo\20483-Programming-in-C-Sharp (PH -> origin)
+? git branch
+* PH
+  master
+
+S:\Estudo\Microsoft\ProCoding\repo\20483-Programming-in-C-Sharp (PH -> origin)
+? git status
+On branch PH
+nothing to commit, working tree clean
+
+S:\Estudo\Microsoft\ProCoding\repo\20483-Programming-in-C-Sharp (PH -> origin)
